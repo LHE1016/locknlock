@@ -1,0 +1,245 @@
+/* layout.css */
+
+/* common */
+body{
+font-size: 20px;
+color: #222;
+line-height: 1.2;
+font-family: 'Noto Sans', sans-serif;
+}
+a{
+color: #222;
+text-decoration: none;
+}
+
+/* main layout */
+/* mob */
+@media screen and (max-width:559px){
+
+    #total{width: 100%; position: relative; overflow: hidden;}
+        .mall{z-index: 99; position: absolute; width: 110px; height: 110px; top: 800px; right: 20px; transition: top 0.3s ease 0.1s;} 몰 바로가기 버튼
+        #header{z-index: 50; position: fixed; width: 100%; height: 64px;}
+            .header_wrap{z-index: 40; position:fixed; left: 0; top: 0; width: 100%; height: 64px;}
+                .header_inner{z-index: 50; position: relative; width: 100%; height: 64px; box-sizing: border-box; margin: 0 auto;}
+            .srch_box{z-index: 40; position: absolute; width: 100%; height: 100%; left: 0; top: 64px; background-color: #fff;}
+        #backdrop{display: none;}
+        #main{position: relative; width: 100%;}
+            section.banner{position: relative; width: 100%; overflow: hidden;}
+                section.main_banner{position: relative; width: 100%; height: 100vh; overflow: hidden;}
+                    .banner_frame{position: relative; width: 300%; height: 100%; overflow: hidden; display: flex; transition: left 0.4s linear 0s;}
+                        section{position: relative; flex: 1; width: 100%;}
+                            .inner{z-index: 10; position: absolute; left: 20px; top: 600px;}
+                    .slide_roll{z-index: 30; position: absolute; left: 29px; bottom: 40px;}
+                section.content1{width: 100%; height: 100vh; padding: 480px 0 0 20px; box-sizing: border-box;}
+                section.content2{width: 100%; height: 100vh; padding: 480px 0 0 20px; box-sizing: border-box; }
+                section.content3{width: 100%; height: 100vh; padding: 480px 0 0 20px; box-sizing: border-box; }
+                section.content4{width: 100%; height: 100vh; padding: 480px 0 0 20px;box-sizing: border-box; }
+            section.news{position: relative; width: 100%; height: 200vh; padding: 70px 0 0;}
+                .news_inner{position: relative; width:520px; margin: 0 auto; padding: 0 20px;}
+            section.lounge{position: relative; width: 100%; height: 240vh; overflow: hidden; padding: 80px 0 0; background-color: #f7f7f7;}
+                .lounge_inner{width:520px; width:520px; margin: 0 auto;} 
+            section.info{position: relative; width: 100%; height: 220vh; padding: 30px 0 0 0;}
+                .info_inner{position: relative; width:520px; margin: 0 auto;}
+            section.now{width: 100%; height: 190vh;}
+                .now_spot{z-index: 30; width: 100%; }
+                    .spot_inner{position: relative; width:520px; margin: 0 auto; padding-top: 100px;}
+                .now_inner{position: relative; width:520px; margin: 0 auto;}
+        #footer{width: 100%; padding: 30px 0 0 0; border-top: 1px solid #cfd1d2;}
+            .footer_wrap{position: relative; width: 100%; padding: 0 20px; margin: 0 auto; box-sizing: border-box;}
+                .foot_inner{width: 100%; position: relative;}
+
+}
+/* tab */
+@media screen and (min-width:560px) and (max-width:959px){
+
+    #total{width: 100%; position: relative; overflow: hidden;}
+        .mall{display: none; z-index: 99; position: absolute; width: 110px; height: 110px; top: 800px; right: 20px; transition: top 0.3s ease 0.1s;}
+        #header{z-index: 50; position: fixed; width: 100%; height: 64px; }
+            .header_wrap{z-index: 50; position:fixed; left: 0; top: 0; width: 100%; height: 64px; transition: transform 0.3s ease 0s;}
+                .header_inner{z-index: 50; position: relative; width: 830px; height: 64px; box-sizing: border-box; margin: 0 auto;}
+            .srch_box{position: absolute; width: 490px; left: 0; top: 64px; background-color: #fff;}
+        #backdrop{z-index: 40; display: none; position: fixed; top: 0; width: 100%; height: 100%;}
+        #main{position: relative; width: 100%; top: 0;}
+            section.banner{position: relative; width: 100%; overflow: hidden;}
+                section.main_banner{position: relative; width: 100%; height: 100vh; overflow: hidden;}
+                    .banner_frame{position: relative; width: 300%; height: 100%; overflow: hidden; display: flex; transition: left 0.4s linear 0s;}
+                        section{position: relative; flex: 1;}
+                            .inner{position: absolute; padding: 500px 0 0 35px;}
+                    .slide_roll{z-index: 30; position: absolute; left: 45px; top: 790px;}
+                section.content1{width: 100%; height: 100vh; padding: 300px 0 0 50px; box-sizing: border-box; }
+                section.content2{width: 100%; height: 100vh; padding: 300px 0 0 50px; box-sizing: border-box; }
+                section.content3{width: 100%; height: 100vh; padding: 300px 0 0 50px; box-sizing: border-box; }
+                section.content4{width: 100%; height: 100vh; padding: 300px 0 0 50px; box-sizing: border-box; }
+            section.news{position: relative; width: 100%; height: 270vh; padding: 125px 0;}
+                .news_inner{width:830px; margin: 0 auto;}
+            section.lounge{position: relative; width: 100%; height: 240vh; overflow: hidden; padding: 80px 0 70px; background-color: #f7f7f7;}
+                .lounge_inner{width:830px; margin: 0 auto;} 
+            section.info{position: relative; width: 100%; height: 200vh; padding: 30px 0;}
+                .info_inner{width:830px; margin: 0 auto;}
+            section.now{width: 100%; height: 175vh; padding-bottom: 50vh;}
+                .now_spot{z-index: 30; width: 100%; height: 450px;}
+                    .spot_inner{position: relative; width:830px; margin: 0 auto; padding-top: 165px;}
+                .now_inner{position: relative; width:830px; margin: 0 auto;}
+        #footer{width: 100%; padding: 30px 0 0 0; border-top: 1px solid #cfd1d2;}
+            .footer_wrap{position: relative; width: 860px; margin: 0 auto;}
+                .foot_inner{width: 100%; position: relative;}
+
+}
+/* pc */
+@media screen and (min-width:960px){
+
+    #total{position: relative; width: 100%;}
+        .mall{z-index: 99; position: absolute; width: 110px; height: 110px; top: 800px; right: 20px; transition: top 0.3s ease 0.1s;} /* 몰 바로가기 버튼 */
+        #header{z-index: 50; position: fixed; width: 100%; height: 64px;}
+            .header_wrap{position: absolute; left: 0; top: 0; width: 100%; height: 64px;}
+                .header_inner{position: relative; width: 1360px; height: 64px; box-sizing: border-box; margin: 0 auto;}
+            .srch_box{z-index: 50; position: absolute; left: 0; top: 64px; width: 100%; height: 320px; margin: 0 auto; box-sizing: border-box;}
+        #backdrop{z-index: 40; display: none; position: fixed; top: 0; width: 100%; height: 100%;}
+        #main{position: relative; width: 100%;}
+            section.banner{position: relative; width: 100%; overflow: hidden;}
+                section.main_banner{position: relative; width: 100%; height: 100vh;  overflow: hidden;}
+                    .banner_frame{position: relative; width: 300%; height: 100%; overflow: hidden; display: flex; transition: left 0.4s linear 0s;}
+                        section{position: relative; flex: 1;}
+                            .inner{position: absolute; margin: 540px 0 0 395px;}
+                    .slide_roll{z-index: 30; position: absolute; left: 395px; top: 795px;}
+                section.content1{width: 100%; height: 100vh; padding: 330px 0 240px 395px; box-sizing: border-box;}
+                section.content2{width: 100%; height: 100vh; padding: 330px 0 240px 395px; box-sizing: border-box; }
+                section.content3{width: 100%; height: 100vh; padding: 330px 0 240px 395px; box-sizing: border-box; }
+                section.content4{width: 100%; height: 100vh; padding: 330px 0 240px 395px; box-sizing: border-box; }
+            section.news{position: relative; width: 100%; height: 60vh; padding: 125px 0 115px;}
+                .news_inner{width: 1130px; margin: 0 auto;}
+            section.lounge{position: relative; width: 100%; height: 110vh; overflow: hidden; padding-top: 125px; background-color: #f7f7f7;}
+                .lounge_inner{width: 1130px; margin: 0 auto;} 
+            section.info{position: relative; width: 100%; height: 170vh; padding: 120px 0 110px 0;}
+                .info_inner{width: 1130px; margin: 0 auto;}
+            section.now{width: 100%; height: 120vh; padding-bottom: 50vh;}
+                .now_spot{z-index: 30; width: 100%; height: 450px;}
+                    .spot_inner{position: relative; width: 1130px; margin: 0 auto; padding-top: 165px;}
+                .now_inner{position: relative; width: 1130px; margin: 0 auto;}
+        #footer{width: 100%; padding: 50px 0 50px; border-top: 1px solid #cfd1d2;}
+            .footer_wrap{position: relative; width: 1360px; margin: 0 auto;}
+                .foot_inner{width: 100%; position: relative;}
+
+}
+
+/* sub1 layout */
+/* mob */
+@media screen and (max-width:559px){
+
+    #total{width: 100%; position: relative; overflow: hidden;}
+        .mall{z-index: 99; position: absolute; width: 110px; height: 110px; top: 800px; right: 20px; transition: top 0.3s ease 0.1s;} 몰 바로가기 버튼
+        #header{z-index: 50; position: fixed; width: 100%; height: 64px;}
+            .header_wrap{z-index: 40; position:fixed; left: 0; top: 0; width: 100%; height: 64px;}
+                .header_inner{z-index: 50; position: relative; width: 100%; height: 64px; box-sizing: border-box; margin: 0 auto;}
+            .srch_box{z-index: 40; position: absolute; width: 100%; height: 100%; left: 0; top: 64px; background-color: #fff;}
+        #backdrop{display: none;}
+        #main{position: relative; width: 100%;}
+            .ask{width: 100%; padding: 120px 0 60px; }
+                .ask_inner{position: relative; width: 470px; margin: 0 auto; box-sizing: border-box; }
+            .form{width: 100%; padding: 60px 0; box-sizing: border-box; background-color: #f7f7f7;}
+                .form_inner{position: relative; width: 470px; margin: 0 auto;}
+            .faq{width: 100%; padding: 90px 0; box-sizing: border-box;}
+                .faq_inner{position: relative; width: 470px; margin: 0 auto;}
+        #footer{width: 100%; padding: 30px 0 0 0; border-top: 1px solid #cfd1d2;}
+        .footer_wrap{position: relative; width: 520px; padding: 0 20px; margin: 0 auto; box-sizing: border-box;}
+            .foot_inner{width: 100%; position: relative;}
+
+}
+/* tab */
+@media screen and (min-width:560px) and (max-width:959px){
+
+    #total{width: 100%; position: relative; overflow: hidden;}
+        .mall{z-index: 99; position: absolute; width: 110px; height: 110px; top: 800px; right: 20px; transition: top 0.3s ease 0.1s;}
+        #header{z-index: 50; position: fixed; width: 100%; height: 64px; }
+            .header_wrap{z-index: 50; position:fixed; left: 0; top: 0; width: 100%; height: 64px; transition: transform 0.3s ease 0s;}
+                .header_inner{z-index: 50; position: relative; width: 830px; height: 64px; box-sizing: border-box; margin: 0 auto;}
+            .srch_box{position: absolute; width: 490px; left: 0; top: 64px; background-color: #fff;}
+        #main{position: relative; width: 100%;}
+            .ask{width: 100%; padding: 120px 0 60px; }
+                .ask_inner{position: relative; width: 670px; margin: 0 auto; box-sizing: border-box; }
+            .form{width: 100%; padding: 60px 0; box-sizing: border-box; background-color: #f7f7f7;}
+                .form_inner{position: relative; width: 670px; margin: 0 auto;}
+            .faq{width: 100%; padding: 90px 0; box-sizing: border-box;}
+                .faq_inner{position: relative; width: 865px; margin: 0 auto;}
+        #footer{width: 100%; padding: 30px 0 0 0; border-top: 1px solid #cfd1d2;}
+        .footer_wrap{position: relative; width: 860px; margin: 0 auto;}
+            .foot_inner{width: 100%; position: relative;}
+
+}
+/* pc */
+@media screen and (min-width:960px){
+
+    #total{width: 100%; position: relative;}
+        .mall{z-index: 99; position: absolute; width: 110px; height: 110px; top: 800px; right: 20px; transition: top 0.3s ease 0.1s;} /* 몰 바로가기 버튼 */
+        #header{z-index: 50; position: fixed; width: 100%; height: 64px;}
+            .header_wrap{position: absolute; left: 0; top: 0; width: 100%; height: 64px;}
+                .header_inner{position: relative; width: 1360px; height: 64px; box-sizing: border-box; margin: 0 auto;}
+            .srch_box{z-index: 50; position: absolute; left: 0; top: 64px; width: 100%; height: 320px; margin: 0 auto; box-sizing: border-box;}
+        #backdrop{z-index: 40; display: none; position: fixed; top: 0; width: 100%; height: 100%;}
+        #main{position: relative; width: 100%;}
+            .ask{width: 100%; padding: 160px 0 85px; }
+                .ask_inner{position: relative; width: 670px; margin: 0 auto; box-sizing: border-box; }
+            .form{width: 100%; padding: 75px 0; box-sizing: border-box; background-color: #f7f7f7;}
+                .form_inner{position: relative; width: 670px; margin: 0 auto;}
+            .faq{width: 100%; padding:160px 0 120px; box-sizing: border-box;}
+                .faq_inner{position: relative; width: 1130px; margin: 0 auto;}
+        #footer{width: 100%; padding: 50px 0 50px; border-top: 1px solid #cfd1d2;}
+        .footer_wrap{position: relative; width: 1360px; margin: 0 auto;}
+            .foot_inner{width: 100%; position: relative;}
+
+}
+
+/* sub2 layout */
+/* mob */
+@media screen and (max-width:559px){
+
+    #total{width: 100%; position: relative; overflow: hidden;}
+        .mall{z-index: 99; position: absolute; width: 110px; height: 110px; top: 800px; right: 20px; transition: top 0.3s ease 0.1s;} 몰 바로가기 버튼
+        #header{z-index: 50; position: fixed; width: 100%; height: 64px;}
+            .header_wrap{z-index: 40; position:fixed; left: 0; top: 0; width: 100%; height: 64px;}
+                .header_inner{z-index: 50; position: relative; width: 100%; height: 64px; box-sizing: border-box; margin: 0 auto;}
+        .srch_box{z-index: 40; position: absolute; width: 100%; height: 100%; left: 0; top: 64px; background-color: #fff;}
+        #backdrop{display: none;}
+        #main{position: relative; width: 100%;}
+            .company_info{width: 100%; padding: 140px 0 100px; box-sizing: border-box;}
+                .company_inner{position: relative; width: 500px; margin: 0 auto;}
+        #footer{width: 100%; padding: 30px 0 0 0; border-top: 1px solid #cfd1d2;}
+            .footer_wrap{position: relative; width: 100%; padding: 0 20px; margin: 0 auto; box-sizing: border-box;}
+                .foot_inner{width: 100%; position: relative;}
+
+}
+/* tab */
+@media screen and (min-width:560px) and (max-width:959px){
+
+    #total{width: 100%; position: relative; overflow: hidden;}
+        .mall{display: none; z-index: 99; position: absolute; width: 110px; height: 110px; top: 800px; right: 20px; transition: top 0.3s ease 0.1s;}
+        #header{z-index: 50; position: fixed; width: 100%; height: 64px; }
+            .header_wrap{z-index: 50; position:fixed; left: 0; top: 0; width: 100%; height: 64px; transition: transform 0.3s ease 0s;}
+                .header_inner{z-index: 50; position: relative; width: 830px; height: 64px; box-sizing: border-box; margin: 0 auto;}
+        .srch_box{position: absolute; width: 490px; left: 0; top: 64px; background-color: #fff;}
+        #backdrop{z-index: 40; display: none; position: fixed; top: 0; width: 100%; height: 100%;}
+        #main{position: relative; width: 100%;}
+            .company_info{width: 100%; padding: 160px 0 80px; box-sizing: border-box;}
+                .company_inner{position: relative; width: 870px; margin: 0 auto;}
+        #footer{width: 100%; padding: 30px 0 0 0; border-top: 1px solid #cfd1d2;}
+            .footer_wrap{position: relative; width: 860px; margin: 0 auto;}
+                .foot_inner{width: 100%; position: relative;}
+
+}
+/* pc */
+@media screen and (min-width:960px){
+
+    #total{width: 100%; position: relative;}
+        .mall{z-index: 99; position: absolute; width: 110px; height: 110px; top: 800px; right: 20px; transition: top 0.3s ease 0.1s;} /* 몰 바로가기 버튼 */
+        #header{z-index: 50; position: fixed; width: 100%; height: 64px;}
+            .header_wrap{position: absolute; left: 0; top: 0; width: 100%; height: 64px;}
+                .header_inner{position: relative; width: 1360px; height: 64px; box-sizing: border-box; margin: 0 auto;}
+            .srch_box{z-index: 50; position: absolute; left: 0; top: 64px; width: 100%; height: 320px; margin: 0 auto; box-sizing: border-box;}
+        #backdrop{z-index: 40; display: none; position: fixed; top: 0; width: 100%; height: 100%;}
+        #main{position: relative; width: 100%;}
+            .company_info{width: 100%; padding: 160px 0 125px; box-sizing: border-box;}
+                .company_inner{position: relative; width: 900px; margin: 0 auto;}
+        #footer{width: 100%; padding: 50px 0 50px; border-top: 1px solid #cfd1d2;}
+            .footer_wrap{position: relative; width: 1360px; margin: 0 auto;}
+                .foot_inner{width: 100%; position: relative;}
+}

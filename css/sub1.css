@@ -1,0 +1,1007 @@
+/* sub1.css */
+
+/* mobile크기 0~559 */
+@media screen and (max-width:559px){
+
+/* mall : 몰 바로가기 버튼 */
+.mall > a{
+display: block;
+width: 100%;
+height: 100%;
+}
+.mall > a > img{
+height: 100%;
+}
+
+/* #main */
+h2{
+font-size: 42px;
+color: #101820;
+font-weight: 700;
+line-height: 1.4;
+text-align: left;
+letter-spacing: -1px;
+margin-bottom: 50px;
+}
+.ask_inner > .ask_info p{
+font-size: 16px;
+color: #101820;
+line-height: 1.6;
+font-weight: 500;
+margin-bottom: 10px;
+}
+.ask_inner > .ask_info dt{
+font-size: 20px;
+color: #101820;
+font-weight: 700;
+line-height: 1.4;
+}
+/* 바로가기버튼 */
+.ask_inner > .ask_info div.button{
+width: 100px;
+height: 40px;
+background-color: #101820;
+margin-top: 30px;
+transition: all 0.2s linear 0s;
+}
+
+.ask_inner > .ask_info div.button:hover{
+background-color: #0071E3;
+}
+.ask_inner > .ask_info div.button > a{
+display: block;
+width: 100%;
+height: 100%;
+color: #fff;
+font-size: 15px;
+padding: 11px 20px;
+box-sizing: border-box;
+}
+
+/* 고객센터 */
+.ask_inner > .ask_info  > .cs{
+position: relative;
+}
+.ask_inner > .ask_info  > .cs > dl{
+border: 1px solid #d8d8d8;
+padding: 25px 20px 15px; 
+margin-bottom: 43px;
+}
+.ask_inner > .ask_info  > .cs dt{
+margin-bottom: 20px;
+letter-spacing: -1px;
+}
+.ask_inner > .ask_info  > .cs dd{
+font-size: 16px;
+color: #54565B;
+margin-bottom: 7px;
+letter-spacing: -1px;
+}
+.ask_inner > .ask_info  > .cs > .button{
+position: absolute;
+right: 20px;
+top: 50px;
+}
+
+/* b2b 맞춤구매 */
+.ask_inner > .ask_info  > .b2b{
+position: relative;
+}
+.ask_inner > .ask_info  > .b2b > dl{
+border: 1px solid #d8d8d8;
+padding: 25px 20px; 
+}
+.ask_inner > .ask_info  > .b2b > .button{
+position: absolute;
+right: 20px;
+top: 50px;  
+}
+
+/* 문의작성(폼) */
+.form h3{
+width: 470px;
+font-size: 20px;
+color: #101820;
+font-weight: 700;
+line-height: 1.4;
+padding-bottom: 15px;
+margin-bottom: 25px;
+border-bottom: 2px solid #101820;
+}
+form dl > dt{
+margin-bottom: 10px;
+font-size: 16px;
+}
+form dl > dt > label{
+display: block;
+font-size: 16px;
+color: #101820;
+line-height: 1.6;
+font-weight: 400;
+}
+form dl input, form dl select, form dl textarea{
+width: 470px;
+height: 50px;
+border: 1px solid #d8d8d8;
+margin-bottom: 25px;
+box-sizing: border-box;
+}
+form dl > dd > input{
+padding: 15px;
+}
+form dl > dd > select{
+padding: 0 10px;
+font-size: 14px;
+transition: border 0.2s linear 0s;
+}
+form dl > dd > select:hover{
+border: 1px solid #101820;
+}
+form dl > dd > select > option:first-of-type{
+font-size: 15px;
+color: #54565b;
+}
+form dl > dd > textarea{
+position: relative;
+width: 470px;
+height: 160px;
+padding: 15px;
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 14px;
+color: #101820;
+}
+    
+/* 첨부파일 */
+form dl > dd.attach > input[type="text"]{
+float: left;
+width: 470px;
+margin-bottom: 10px;
+}
+form dl > dd.attach > label{
+float: right;
+display: inline-block;
+width: 120px;
+height: 50px;
+background-color: #101820;
+color: #fff;
+font-size: 16px;
+font-weight: bold;
+padding: 15px 28px;
+box-sizing: border-box;
+transition: all 0.2s linear 0s;
+cursor: pointer;
+}
+form dl > dd.attach > label:hover{
+background-color: #0071E3;
+}
+form dl > dd.attach > p{
+clear: both;
+font-size: 16px;
+color: #54565b;
+margin-bottom: 30px;
+}
+
+/* 약관동의 */
+.essential{
+display: flex;
+}
+.essential > input[type="checkbox"]{
+width: 15px;
+height: 15px;
+border: #54565B;
+box-sizing: border-box;
+margin-right: 5px;
+}
+.essential > label{
+width: 300px;
+font-size: 16px;
+color: #54565B;
+margin-right: 340px;
+}
+
+.agree_context{
+width: 470px;
+height: 140px;
+overflow-y: scroll;
+margin-top: 10px;
+background-color: #fff;
+border: 1px solid #d8d8d8;
+padding: 15px;
+box-sizing: border-box;
+font-size: 15px;
+color: #54565B;
+}
+.agree_context > h4{
+margin: 25px 0;
+font-weight: bold;
+}
+.agree_context > p{
+margin-bottom: 25px;
+}
+.agree_context li{
+margin-bottom: 5px;
+}
+
+input[type="reset"], input[type="submit"]{
+display: inline-block;
+padding: 17px 37px;
+font-size: 18px;
+text-align: center;
+border: 1px solid #101820;
+margin-top: 40px;
+font-weight: bold;
+transition: all 0.2s linear 0s;
+cursor: pointer;
+}
+input[type="reset"]:hover, input[type="submit"]:hover{
+background-color: #0071E3;
+border: 1px solid #fff;
+color: #fff;
+}
+input[type="reset"]{
+margin-left: 120px;
+}
+input[type="submit"]{
+background-color: #101820;
+color: #fff;
+}
+
+/* faq */
+/* 질문 카테고리 */
+.faq h2{
+width: 865px;
+margin: 0 auto;
+text-align: left;
+margin-bottom: 40px;
+}
+.faq .faq_category > ul{
+display: flex;
+flex-wrap: wrap;
+width: 470px;
+margin-bottom: 40px;
+}
+.faq .faq_category > ul > li{
+margin: 0 10px 10px 0;
+}
+.faq .faq_category > ul > li:last-of-type{
+margin-right: 0;
+}
+.faq .faq_category > ul > li > a{
+display: inline-block;
+border: 1px solid #101820;
+padding: 10px;
+border-radius: 5px;
+font-size: 16px;
+transition: all 0.2s linear 0s;
+}
+.faq .faq_category > ul > li.on > a, .faq .faq_category > ul > li:hover > a{
+background-color: #101820;
+color: #fff;
+}
+
+/* 질문&답변 */
+.faq_list > ul > li{
+display: none;
+padding: 25px 0;
+box-sizing: border-box;
+border-bottom: 1px solid #cfd1d2;
+transition: all 0.3s linear 0s;
+cursor: pointer;
+}
+.faq_list > ul.container > li{
+display: block;
+}
+.faq_list > ul > li:first-of-type{
+border-top: 1px solid #cfd1d2;
+}
+.faq_list > ul > li.on > .faq_q{
+margin-bottom: 20px;
+}
+.faq_list > ul > li > .faq_a{
+display: none;
+width: 470px;
+color: #101820;
+line-height: 1.6;
+font-weight: 400;
+padding-left: 30px;
+}
+.faq_list > ul > li.on > .faq_a{
+display: block;
+}
+.faq_list > ul > li > .faq_q > p{
+width: 94%;
+display: inline-block;
+font-size: 16px;
+color: #101820;
+letter-spacing: -1px;
+}
+.faq_list > ul > li > .faq_a > span{
+display: block;
+margin-bottom: 20px;
+}
+.faq_list > ul > li > .faq_q > p > span{
+margin-right: 3px;
+font-size: 20px;
+font-weight: bold;
+}
+.faq_list > ul > li > .faq_q > i{
+display: inline-block;
+transform: scale(1.2);
+}
+.faq_list > ul > li.on > .faq_q > i{
+display: none;
+}
+.faq_list > ul > li > ul > li{
+border: none;
+}
+    
+}/* mobile 미디어쿼리 */
+
+/* tablet크기 560~959 */
+@media screen and (min-width:560px) and (max-width:959px){
+
+/* mall : 몰 바로가기 버튼 */
+.mall > a{
+display: block;
+width: 100%;
+height: 100%;
+}
+.mall > a > img{
+height: 100%;
+}
+
+/* #main */
+h2{
+font-size: 64px;
+color: #101820;
+font-weight: 700;
+line-height: 1.4;
+text-align: left;
+letter-spacing: -1px;
+margin-bottom: 50px;
+}
+.ask_inner > .ask_info p{
+font-size: 16px;
+color: #101820;
+line-height: 1.6;
+font-weight: 500;
+margin-bottom: 10px;
+}
+.ask_inner > .ask_info dt{
+font-size: 20px;
+color: #101820;
+font-weight: 700;
+line-height: 1.4;
+}
+/* 바로가기버튼 */
+.ask_inner > .ask_info div.button{
+width: 100px;
+height: 40px;
+background-color: #101820;
+transition: all 0.2s linear 0s;
+}
+.ask_inner > .ask_info div.button:hover{
+background-color: #0071E3;
+}
+.ask_inner > .ask_info div.button > a{
+display: block;
+width: 100%;
+height: 100%;
+color: #fff;
+font-size: 15px;
+padding: 11px 20px;
+box-sizing: border-box;
+}
+
+/* 고객센터 */
+.ask_inner > .ask_info  > .cs{
+position: relative;
+}
+.ask_inner > .ask_info  > .cs > dl{
+border: 1px solid #d8d8d8;
+padding: 25px 20px 15px; 
+margin-bottom: 43px;
+}
+.ask_inner > .ask_info  > .cs dt{
+margin-bottom: 20px;
+letter-spacing: -1px;
+}
+.ask_inner > .ask_info  > .cs dd{
+font-size: 16px;
+color: #54565B;
+margin-bottom: 7px;
+letter-spacing: -1px;
+}
+.ask_inner > .ask_info  > .cs > .button{
+position: absolute;
+right: 20px;
+top: 50px;
+}
+
+/* b2b 맞춤구매 */
+.ask_inner > .ask_info  > .b2b{
+position: relative;
+}
+.ask_inner > .ask_info  > .b2b > dl{
+border: 1px solid #d8d8d8;
+padding: 25px 20px; 
+}
+.ask_inner > .ask_info  > .b2b > .button{
+position: absolute;
+right: 20px;
+top: 55px;  
+}
+
+/* 문의작성(폼) */
+.form h3{
+width: 100%;
+font-size: 20px;
+color: #101820;
+font-weight: 700;
+line-height: 1.4;
+padding-bottom: 15px;
+margin-bottom: 25px;
+border-bottom: 2px solid #101820;
+}
+form dl > dt{
+margin-bottom: 10px;
+font-size: 16px;
+}
+form dl > dt > label{
+display: block;
+font-size: 16px;
+color: #101820;
+line-height: 1.6;
+font-weight: 400;
+}
+form dl > dd > input, form dl > dd > select, form dl > dd > textarea{
+height: 50px;
+border: 1px solid #d8d8d8;
+margin-bottom: 25px;
+box-sizing: border-box;
+}
+form dl > dd > input{
+width: 100%;
+padding: 15px;
+}
+form dl > dd > select{
+width: 320px;
+padding: 0 10px;
+font-size: 14px;
+transition: border 0.2s linear 0s;
+}
+form dl > dd > select:hover{
+border: 1px solid #101820;
+}
+form dl > dd > select > option:first-of-type{
+font-size: 15px;
+color: #54565b;
+}
+form dl > dd > textarea{
+position: relative;
+width: 100%;
+height: 160px;
+padding: 15px;
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 14px;
+color: #101820;
+}
+    
+/* 첨부파일 */
+form dl > dd.attach > input[type="text"]{
+float: left;
+width: 535px;
+margin-bottom: 10px;
+}
+form dl > dd.attach > label{
+float: right;
+display: inline-block;
+width: 120px;
+height: 50px;
+background-color: #101820;
+color: #fff;
+font-size: 16px;
+font-weight: bold;
+padding: 15px 28px;
+box-sizing: border-box;
+transition: all 0.2s linear 0s;
+cursor: pointer;
+}
+form dl > dd.attach > label:hover{
+background-color: #0071E3;
+}
+form dl > dd.attach > p{
+clear: both;
+font-size: 16px;
+color: #54565b;
+margin-bottom: 30px;
+}
+
+/* 약관동의 */
+.essential{
+display: flex;
+}
+.essential > input[type="checkbox"]{
+width: 15px;
+height: 15px;
+border: #54565B;
+box-sizing: border-box;
+margin-right: 5px;
+}
+.essential > label{
+width: 300px;
+font-size: 16px;
+color: #54565B;
+margin-right: 340px;
+}
+
+.agree_context{
+height: 140px;
+overflow-y: scroll;
+margin-top: 10px;
+background-color: #fff;
+border: 1px solid #d8d8d8;
+padding: 15px;
+font-size: 15px;
+color: #54565B;
+}
+.agree_context > h4{
+margin: 25px 0;
+font-weight: bold;
+}
+.agree_context > p{
+margin-bottom: 25px;
+}
+.agree_context li{
+margin-bottom: 5px;
+}
+
+input[type="reset"], input[type="submit"]{
+display: inline-block;
+padding: 17px 37px;
+font-size: 18px;
+text-align: center;
+border: 1px solid #101820;
+margin-top: 40px;
+font-weight: bold;
+transition: all 0.2s linear 0s;
+cursor: pointer;
+}
+input[type="reset"]:hover, input[type="submit"]:hover{
+background-color: #0071E3;
+border: 1px solid #fff;
+color: #fff;
+}
+input[type="reset"]{
+margin-left: 210px;
+}
+input[type="submit"]{
+background-color: #101820;
+color: #fff;
+}
+
+/* faq */
+/* 질문 카테고리 */
+.faq h2{
+width: 865px;
+margin: 0 auto;
+text-align: left;
+margin-bottom: 40px;
+}
+.faq .faq_category > ul{
+display: flex;
+width: 865px;
+margin: 0 auto ;
+}
+.faq .faq_category > ul > li{
+margin: 0 10px 60px 0;
+}
+.faq .faq_category > ul > li:last-of-type{
+margin-right: 0;
+}
+.faq .faq_category > ul > li > a{
+display: inline-block;
+border: 1px solid #101820;
+padding: 10px;
+border-radius: 5px;
+font-size: 16px;
+transition: all 0.2s linear 0s;
+}
+.faq .faq_category > ul > li.on > a, .faq .faq_category > ul > li:hover > a{
+background-color: #101820;
+color: #fff;
+}
+
+/* 질문&답변 */
+.faq_list > ul > li{
+display: none;
+padding: 25px 0;
+box-sizing: border-box;
+border-bottom: 1px solid #cfd1d2;
+transition: all 0.3s linear 0s;
+cursor: pointer;
+}
+.faq_list > ul.container > li{
+display: block;
+}
+.faq_list > ul > li:first-of-type{
+border-top: 1px solid #cfd1d2;
+}
+.faq_list > ul > li.on > .faq_q{
+margin-bottom: 20px;
+}
+.faq_list > ul > li > .faq_a{
+display: none;
+width: 800px;
+color: #101820;
+line-height: 1.6;
+font-weight: 400;
+padding-left: 30px;
+}
+.faq_list > ul > li.on > .faq_a{
+display: block;
+}
+.faq_list > ul > li > .faq_q > p{
+width: 96%;
+display: inline-block;
+font-size: 16px;
+color: #101820;
+}
+.faq_list > ul > li > .faq_a > span{
+display: block;
+margin-bottom: 20px;
+}
+.faq_list > ul > li > .faq_q > p > span{
+margin-right: 5px;
+font-size: 20px;
+font-weight: bold;
+}
+.faq_list > ul > li > .faq_q > i{
+display: inline-block;
+transform: scale(1.2);
+}
+.faq_list > ul > li.on > .faq_q > i{
+display: none;
+}
+.faq_list > ul > li > ul > li{
+border: none;
+}
+
+}/* tablet 미디어쿼리 */
+
+
+/* pc크기 960~최대 */
+@media screen and (min-width:960px){
+
+/* mall : 몰 바로가기 버튼 */
+.mall > a{
+display: block;
+width: 100%;
+height: 100%;
+}
+.mall > a > img{
+height: 100%;
+}
+    
+
+/* backdrop */
+#backdrop.on{
+display: block;
+background-color: rgba(255,255,255,0.1);
+backdrop-filter: blur(5px);
+}
+
+/* #main */
+h2{
+font-size: 64px;
+color: #101820;
+font-weight: 700;
+line-height: 1.4;
+text-align: center;
+margin-bottom: 80px;
+}
+.ask_inner > .ask_info p{
+font-size: 18px;
+color: #101820;
+line-height: 1.6;
+font-weight: 500;
+margin-bottom: 20px;
+}
+.ask_inner > .ask_info dt{
+font-size: 20px;
+color: #101820;
+font-weight: 700;
+line-height: 1.4;
+}
+/* 바로가기버튼 */
+.ask_inner > .ask_info div.button{
+width: 100px;
+height: 40px;
+background-color: #101820;
+transition: all 0.2s linear 0s;
+}
+.ask_inner > .ask_info div.button:hover{
+background-color: #0071E3;
+}
+.ask_inner > .ask_info div.button > a{
+display: block;
+width: 100%;
+height: 100%;
+color: #fff;
+font-size: 15px;
+padding: 11px 20px;
+box-sizing: border-box;
+}
+
+/* 고객센터 */
+.ask_inner > .ask_info  > .cs{
+position: relative;
+}
+.ask_inner > .ask_info  > .cs > dl{
+border: 1px solid #d8d8d8;
+padding: 25px 0 25px 35px; 
+margin-bottom: 43px;
+}
+.ask_inner > .ask_info  > .cs dt{
+margin-bottom: 20px;
+}
+.ask_inner > .ask_info  > .cs dd{
+font-size: 16px;
+color: #54565B;
+margin-bottom: 7px;
+}
+.ask_inner > .ask_info  > .cs > .button{
+position: absolute;
+right: 30px;
+top: 100px;
+}
+
+/* b2b 맞춤구매 */
+.ask_inner > .ask_info  > .b2b{
+position: relative;
+}
+.ask_inner > .ask_info  > .b2b > dl{
+border: 1px solid #d8d8d8;
+padding: 40px 35px; 
+margin-bottom: 80px;
+}
+.ask_inner > .ask_info  > .b2b > .button{
+position: absolute;
+right: 30px;
+top: 83px;  
+}
+
+/* 문의작성(폼) */
+.form h3{
+width: 100%;
+font-size: 20px;
+color: #101820;
+font-weight: 700;
+line-height: 1.4;
+padding-bottom: 15px;
+margin-bottom: 25px;
+border-bottom: 2px solid #101820;
+}
+form dl > dt{
+margin-bottom: 10px;
+}
+form dl > dt > label{
+display: block;
+font-size: 18px;
+color: #101820;
+line-height: 1.6;
+font-weight: 400;
+}
+form dl > dd > input,select,textarea{
+height: 50px;
+border: 1px solid #d8d8d8;
+margin-bottom: 30px;
+box-sizing: border-box;
+}
+form dl > dd > input{
+width: 100%;
+padding: 15px;
+}
+form dl > dd > select{
+width: 320px;
+padding: 0 15px;
+font-size: 14px;
+transition: border 0.2s linear 0s;
+}
+form dl > dd > select:hover{
+border: 1px solid #101820;
+}
+form dl > dd > select > option:first-of-type{
+font-size: 15px;
+color: #54565b;
+}
+form dl > dd > textarea{
+position: relative;
+width: 100%;
+height: 160px;
+padding: 15px;
+font-family: 'Noto Sans KR', sans-serif;
+font-size: 14px;
+color: #101820;
+}
+    
+/* 첨부파일 */
+form dl > dd.attach > input[type="text"]{
+float: left;
+width: 535px;
+margin-bottom: 10px;
+}
+form dl > dd.attach > label{
+float: right;
+display: inline-block;
+width: 120px;
+height: 50px;
+background-color: #101820;
+color: #fff;
+font-size: 16px;
+font-weight: bold;
+padding: 15px 28px;
+box-sizing: border-box;
+transition: all 0.2s linear 0s;
+cursor: pointer;
+}
+form dl > dd.attach > label:hover{
+background-color: #0071E3;
+}
+form dl > dd.attach > p{
+clear: both;
+font-size: 16px;
+color: #54565b;
+margin-bottom: 30px;
+}
+
+/* 약관동의 */
+.essential{
+display: flex;
+}
+.essential > input[type="checkbox"]{
+width: 15px;
+height: 15px;
+border: #54565B;
+box-sizing: border-box;
+margin-right: 5px;
+}
+.essential > label{
+width: 300px;
+font-size: 16px;
+color: #54565B;
+margin-right: 340px;
+}
+
+.agree_context{
+height: 140px;
+overflow-y: scroll;
+margin-top: 20px;
+background-color: #fff;
+border: 1px solid #d8d8d8;
+padding: 15px;
+font-size: 15px;
+color: #54565B;
+}
+.agree_context > h4{
+margin: 25px 0;
+font-weight: bold;
+}
+.agree_context > p{
+margin-bottom: 25px;
+}
+.agree_context li{
+margin-bottom: 5px;
+}
+
+input[type="reset"], input[type="submit"]{
+display: inline-block;
+padding: 17px 37px;
+font-size: 18px;
+text-align: center;
+border: 1px solid #101820;
+margin-top: 55px;
+font-weight: bold;
+transition: all 0.2s linear 0s;
+cursor: pointer;
+}
+input[type="reset"]:hover, input[type="submit"]:hover{
+background-color: #0071E3;
+border: 1px solid #fff;
+color: #fff;
+}
+input[type="reset"]{
+margin-left: 210px;
+}
+input[type="submit"]{
+background-color: #101820;
+color: #fff;
+}
+
+/* faq */
+/* 질문 카테고리 */
+.faq h2{
+margin-bottom: 60px;
+}
+.faq .faq_category > ul{
+display: flex;
+width: 725px;
+margin: 0 auto ;
+}
+.faq .faq_category > ul > li{
+margin: 0 10px 60px 0;
+}
+.faq .faq_category > ul > li:last-of-type{
+margin-right: 0;
+}
+.faq .faq_category > ul > li > a{
+display: inline-block;
+border: 1px solid #101820;
+padding: 10px;
+border-radius: 5px;
+font-size: 16px;
+transition: all 0.2s linear 0s;
+}
+.faq .faq_category > ul > li.on > a, .faq .faq_category > ul > li:hover > a{
+background-color: #101820;
+color: #fff;
+}
+
+/* 질문&답변 */
+.faq_list > ul > li{
+display: none;
+padding: 25px 30px;
+box-sizing: border-box;
+border-bottom: 1px solid #cfd1d2;
+transition: all 0.3s linear 0s;
+cursor: pointer;
+}
+.faq_list > ul.container > li{
+display: block;
+}
+.faq_list > ul > li:first-of-type{
+border-top: 1px solid #cfd1d2;
+}
+.faq_list > ul > li.on > .faq_q{
+margin-bottom: 20px;
+}
+.faq_list > ul > li > .faq_a{
+display: none;
+width: 800px;
+color: #101820;
+line-height: 1.6;
+font-weight: 400;
+padding-left: 30px;
+}
+.faq_list > ul > li.on > .faq_a{
+display: block;
+}
+.faq_list > ul > li > .faq_q > p{
+width: 97%;
+display: inline-block;
+font-size: 18px;
+color: #101820;
+}
+.faq_list > ul > li > .faq_a > span{
+display: block;
+margin-bottom: 20px;
+}
+.faq_list > ul > li > .faq_q > p > span{
+margin-right: 5px;
+font-size: 20px;
+font-weight: bold;
+}
+.faq_list > ul > li > .faq_q > i{
+display: inline-block;
+transform: scale(1.2);
+}
+.faq_list > ul > li.on > .faq_q > i{
+display: none;
+}
+.faq_list > ul > li > ul > li{
+border: none;
+}
+
+
+} /* PC 미디어쿼리 */
+    

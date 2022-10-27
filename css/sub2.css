@@ -1,0 +1,339 @@
+/* sub2.css */
+
+/* mobile크기 0~559 */
+@media screen and (max-width:559px){
+
+/* mall : 몰 바로가기 버튼 */
+.mall > a{
+display: block;
+width: 100%;
+height: 100%;
+}
+.mall > a > img{
+height: 100%;
+}
+
+/* #main */
+.company_inner > h2{
+font-size: 42px;
+color: #101820;
+font-weight: 700;
+line-height: 1.4;
+text-align: left;
+margin-bottom: 40px;
+letter-spacing: -1px;
+}
+
+/* company category */
+.company_category > ul{
+display: flex;
+width: 453px;
+height: 40px;
+margin-bottom: 30px;
+}
+.company_category > ul > li{
+margin: 0 5px 60px 5px;
+}
+.company_category > ul > li > a{
+display: inline-block;
+border: 1px solid #101820;
+padding: 10px;
+border-radius: 5px;
+font-size: 16px;
+transition: all 0.3s linear 0s;
+}
+.company_category > ul > li.on > a, .company_category > ul > li:hover > a{
+background-color: #101820;
+color: #fff;
+}
+
+/* company table */
+.company_table > table{
+width: 100%;
+text-align: center;
+border: 1px solid #cfd1d2;
+margin-bottom: 60px;
+font-size: 15px;
+line-height: 1.6;
+color: #101820;
+}
+.company_table > table tr{
+height: 50px;
+border-bottom: 1px solid #cfd1d2;
+}
+.company_table > table > thead{
+background-color: #efefef;
+}
+.company_table > table > thead th{
+text-align: center;
+border-right: 1px solid #cfd1d2;
+}
+/* 구분 */
+.company_table > table > thead th:first-of-type{
+width: 90px;
+}
+.company_table > table > thead th:last-of-type{
+width: 90px;
+border-right: 0;
+}
+.company_table > table > tbody td{
+border-right: 1px solid #cfd1d2;
+}
+.company_table > table > tbody td:last-of-type{
+border-right: 0;
+}
+
+/* 페이지네이션 */
+.pagination > ul{
+width: 90px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+}
+.pagination > ul > li > a.btn_prev > i, .pagination > ul > li > a.btn_next > i{
+opacity: 0.5;
+transform: scale(0.7);
+}
+.pagination > ul > li > span.page_num{
+display: inline-block;
+position: relative;
+width: 15px;
+text-align: center;
+}
+.pagination > ul > li > span.page_num:after{
+content: "";
+display: block;
+position: absolute;
+left: 50%;
+top:120%;
+transform: translateX(-50%);
+width: 110%;
+height: 2px;
+background-color: #101820;
+}
+
+}/* mobile 미디어쿼리 */
+
+/* tablet크기 560~959 */
+@media screen and (min-width:560px) and (max-width:959px){
+
+/* mall : 몰 바로가기 버튼 */
+.mall > a{
+display: block;
+width: 100%;
+height: 100%;
+}
+.mall > a > img{
+height: 100%;
+}
+
+/* #main */
+.company_inner > h2{
+font-size: 64px;
+color: #101820;
+font-weight: 700;
+line-height: 1.4;
+text-align: left;
+margin-bottom: 45px;
+letter-spacing: -1px;
+}
+
+/* company category */
+.company_category > ul{
+display: flex;
+width: 453px;
+}
+.company_category > ul > li{
+margin: 0 5px 40px 5px;
+}
+.company_category > ul > li > a{
+display: inline-block;
+border: 1px solid #101820;
+padding: 10px;
+border-radius: 5px;
+font-size: 16px;
+transition: all 0.3s linear 0s;
+}
+.company_category > ul > li.on > a, .company_category > ul > li:hover > a{
+background-color: #101820;
+color: #fff;
+}
+
+/* company table */
+.company_table > table{
+width: 100%;
+text-align: center;
+border: 1px solid #cfd1d2;
+margin-bottom: 60px;
+font-size: 15px;
+line-height: 1.6;
+color: #101820;
+}
+.company_table > table tr{
+height: 50px;
+border-bottom: 1px solid #cfd1d2;
+}
+.company_table > table > thead{
+background-color: #efefef;
+}
+.company_table > table > thead th{
+text-align: center;
+border-right: 1px solid #cfd1d2;
+}
+/* 구분 */
+.company_table > table > thead th:first-of-type{
+width: 150px;
+}
+.company_table > table > thead th:last-of-type{
+width: 150px;
+border-right: 0;
+}
+.company_table > table > tbody td{
+border-right: 1px solid #cfd1d2;
+}
+.company_table > table > tbody td:last-of-type{
+border-right: 0;
+}
+
+/* 페이지네이션 */
+.pagination > ul{
+width: 90px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+}
+.pagination > ul > li > a.btn_prev > i, .pagination > ul > li > a.btn_next > i{
+opacity: 0.5;
+transform: scale(0.7);
+}
+.pagination > ul > li > span.page_num{
+display: inline-block;
+position: relative;
+width: 15px;
+text-align: center;
+}
+.pagination > ul > li > span.page_num:after{
+content: "";
+display: block;
+position: absolute;
+left: 50%;
+top:120%;
+transform: translateX(-50%);
+width: 110%;
+height: 2px;
+background-color: #101820;
+}
+
+}/* tablet 미디어쿼리 */
+
+/* pc크기 960~최대 */
+@media screen and (min-width:960px){
+
+/* mall : 몰 바로가기 버튼 */
+.mall > a{
+display: block;
+width: 100%;
+height: 100%;
+}
+.mall > a > img{
+height: 100%;
+}
+
+/* #main */
+.company_inner > h2{
+font-size: 64px;
+color: #101820;
+font-weight: 700;
+line-height: 1.4;
+text-align: center;
+margin-bottom: 70px;
+}
+
+/* company category */
+.company_category > ul{
+display: flex;
+width: 453px;
+margin: 0 auto;
+}
+.company_category > ul > li{
+margin: 0 5px 60px 5px;
+}
+.company_category > ul > li > a{
+display: inline-block;
+border: 1px solid #101820;
+padding: 10px;
+border-radius: 5px;
+font-size: 16px;
+transition: all 0.3s linear 0s;
+}
+.company_category > ul > li.on > a, .company_category > ul > li:hover > a{
+background-color: #101820;
+color: #fff;
+}
+
+/* company table */
+.company_table > table{
+width: 100%;
+text-align: center;
+border: 1px solid #cfd1d2;
+margin-bottom: 110px;
+font-size: 15px;
+line-height: 1.6;
+color: #101820;
+}
+.company_table > table tr{
+height: 50px;
+border-bottom: 1px solid #cfd1d2;
+}
+.company_table > table > thead{
+background-color: #efefef;
+}
+.company_table > table > thead th{
+text-align: center;
+border-right: 1px solid #cfd1d2;
+}
+/* 구분 */
+.company_table > table > thead th:first-of-type{
+width: 150px;
+}
+.company_table > table > thead th:last-of-type{
+width: 150px;
+border-right: 0;
+}
+.company_table > table > tbody td{
+border-right: 1px solid #cfd1d2;
+}
+.company_table > table > tbody td:last-of-type{
+border-right: 0;
+}
+
+/* 페이지네이션 */
+.pagination > ul{
+width: 90px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+}
+.pagination > ul > li > a.btn_prev > i, .pagination > ul > li > a.btn_next > i{
+opacity: 0.5;
+transform: scale(0.7);
+}
+.pagination > ul > li > span.page_num{
+display: inline-block;
+position: relative;
+width: 15px;
+text-align: center;
+}
+.pagination > ul > li > span.page_num:after{
+content: "";
+display: block;
+position: absolute;
+left: 50%;
+top:120%;
+transform: translateX(-50%);
+width: 110%;
+height: 2px;
+background-color: #101820;
+}
+
+} /* PC 미디어쿼리 */
