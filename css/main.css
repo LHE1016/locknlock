@@ -111,7 +111,7 @@ color: #fff;
 .main_banner > .banner_frame > section > .bg{
 width: 100%;
 object-fit: cover;
-filter: grayscale(0.2);
+filter: grayscale(1);
 }
 .main_banner > .banner_frame > section > .web{
 display: none;
